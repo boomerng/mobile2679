@@ -1,0 +1,48 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Ficticious Form SCS_2679</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="fav" href="favicon.ico">
+  <link rel="manifest" href="site.webmanifest">
+  <link href="css/fake-form.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <form id=form>
+      <div style="margin-bottom: 20px"><input id=clearAll type="reset" value="Clear All" /></div>
+      <div>Email Address</div>
+      <div style="margin-bottom: 10px"><input id=email type=email placeholder="Email"></div>
+      <div>Personal URL</div>
+      <div style="margin-bottom: 10px"><input id=url type=url placeholder="URL"></div>
+      <div style="margin-bottom: 10px">Year of Birth</div>
+      <div style="margin-bottom: 10px"><input id=year type=number placeholder="Birth year"></div>
+      <div>Gender</div>
+      <div style="margin-bottom: 10px">
+            <input id=radioMale type=radio value="Male"><label for=radioMale>Male</label>
+            <input id=radioFemale type=radio value="Female"><label for=radioFemale>Female</label>
+      </div>
+      <div style="margin-bottom: 10px">Comments</div>
+      <div><textarea cols=50 rows=5 placeholder="Comments"></textarea></div>
+      
+      <div style="margin: 20px 0"><input id=checkFake type="checkbox" /><label for=checkFake>Data entered are fictitious</label> </div>
+      <div id=progressContainer style="margin-bottom: 10px">
+        <label>Progress bar</label>
+      </div>
+      <div><input type="submit" value="Submit Fictitious Form"></div>
+
+      <button id="getGeoLocation" type="button" style="margin: 20px 0">Get geo location</button>
+      <p id="geoLocation"></p>
+      
+  </form>
+  <script src="js/vendor/modernizr-3.6.0.min.js"></script>
+  <script src="js/vendor/modernizr-geo-progress.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+  <script src="js/fake-form.js"></script>
+</body>
+</html>

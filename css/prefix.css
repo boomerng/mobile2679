@@ -1,0 +1,93 @@
+.img-border {
+    border: solid 20px transparent;
+    border-image: url(../images/border.jpg) 20 20 20 20 repeat;
+    resize: both;
+    overflow:hidden;
+  }
+
+/*****************************/
+/*        Flex Grid          */
+/*****************************/
+.flex-grid  {
+    margin-right: auto;
+    margin-left: auto;
+    padding: 1rem;
+    width: 48rem;
+}
+
+.flex-grid > .flex-row {
+    display: flex;
+    flex: 0 1 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.flex-grid > .flex-row > .flex-cell {
+    box-sizing: border-box;
+    flex: 0 1 auto;
+    padding: 1rem;
+    background-color: #CCC;
+    text-align:center;
+    width: 8rem;
+    height: 8rem;
+}
+/*****************************/
+/*        cursors            */
+/*****************************/
+.cursor-none:hover {
+    cursor: none;
+}
+.cursor-cm:hover {
+    cursor: context-menu;
+}
+.cursor-cell:hover {
+    cursor: cell;
+}
+.cursor-vt:hover {
+    cursor: vertical-text;
+}
+.cursor-alias:hover {
+    cursor: alias;
+}
+.cursor-copy:hover {
+    cursor: copy;
+}
+
+.cursor-nd:hover {
+    cursor: no-drop;
+}
+.cursor-na:hover {
+    cursor: not-allowed;
+}
+.cursor-cr:hover {
+    cursor: col-resize;
+}
+.cursor-rr:hover {
+    cursor: row-resize
+}
+.cursor-as:hover,
+.cursor-scroll:hover {
+    cursor: all-scroll;
+}
+.cursor-zi:hover {
+    cursor: zoom-in;
+}
+.cursor-alias:hover {
+    cursor: alias;
+}
+
+.cursor-zo:hover {
+    cursor: zoom-out;
+}
+
+.cursor-nesw:hover {
+    cursor: nesw-resize;
+}
+.cursor-nwse:hover {
+    cursor: nwse-resize;
+}
+.cursor-ew:hover {
+    cursor: ew-resize;
+}
+.cursor-ns:hover {
+    cursor: ns-resize;
+}
