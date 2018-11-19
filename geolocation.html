@@ -9,15 +9,47 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="fav" href="favicon.ico">
   <link rel="manifest" href="site.webmanifest">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin=""/>
+  <link href="css/prefix.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-    <button id="getGeoLocation" type="button" style="width:200px;height:50px;">See my location</button>
-      
+
+  <div id="map" style="height: 400px;width: 60%;margin:auto;"></div>
+  <div class="flex-grid">
+      <div class="flex-row">
+          <div class="flex-table-cell">
+              <button id="getGeoLocation" type="button" style="width:200px;height:50px;margin-top:20px;" onClick="return getGeoLocationClick()">See my location</button>
+          </div>
+      </div>
+      <div id='province-wrapper' class="flex-row">
+          <div class="flex-table-cell">
+              <label for="province">Select your province</label>
+              <select id="province" onChange='return getProvinceInfoChange(this.value)'>
+                  <option value="--">-- Select a province/territory --</option>
+                  <option value="AB">Alberta</option>
+                  <option value="BC">British Columbia</option>
+                  <option value="MB">Manitoba</option>
+                  <option value="NB">New Brunswick</option>
+                  <option value="NT">Northwest Territories</option>
+                  <option value="NL">Newfoundland and Labrador</option>
+                  <option value="NS">Nova Scotia</option>
+                  <option value="NU">Nunavut</option>
+                  <option value="ON">Ontario</option>
+                  <option value="PE">Prince Edward Island</option>
+                  <option value="QC">Quebec</option>
+                  <option value="SK">Saskatchewan</option>
+                  <option value="YT">Yukon</option>
+              </select>
+          </div>
+      </div>
+  </div>
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
   <script src="js/vendor/modernizr-geo-progress.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
-  <script src="js/fake-form.js"></script>
+  <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js" integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA==" crossorigin=""></script>
+  <script src="js/min/geoLocation.min.js"></script>
+  <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap"></script> -->
 </body>
 </html>
