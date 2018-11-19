@@ -14,12 +14,12 @@
 </head>
 
 <body>
-
-  <div id="map" style="height: 400px;width: 60%;margin:auto;"></div>
-  <div class="flex-grid">
+  <h3>Assignment 3.1 Show Geo-location</h1>
+  <div id="map" style="height: 400px;width: 100%;margin:auto 0;clear:both;"></div>
+  <div class="flex-grid" style="padding: 0;">
       <div class="flex-row">
           <div class="flex-table-cell">
-              <button id="getGeoLocation" type="button" style="width:200px;height:50px;margin-top:20px;" onClick="return getGeoLocationClick()">See my location</button>
+              <button id="getGeoLocation" type="button" style="width:200px;height:20px;" onClick="return getGeoLocationClick()">See my location</button>
           </div>
       </div>
       <div id='province-wrapper' class="flex-row">
@@ -50,6 +50,5 @@
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
   <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js" integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA==" crossorigin=""></script>
   <script src="js/min/geoLocation.min.js"></script>
-  <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap"></script> -->
 </body>
 </html>
