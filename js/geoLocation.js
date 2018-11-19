@@ -130,7 +130,6 @@ function InitializeMap() {
 };
 
 var showPosition = function(position, popup) {
-    provinceWrapper.style.display = 'none';
     if (prevMarker) {
         prevMarker.remove();
     }
