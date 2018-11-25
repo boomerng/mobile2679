@@ -1,0 +1,37 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>device interaction</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="fav" href="favicon.ico">
+  <link rel="manifest" href="site.webmanifest">
+  <link href="css/prefix.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <h3>Assignment 3.3 Device interaction</h3>
+    <label id="error" style="color:red;"></label>
+    <br/><br/>
+    <input id="iVibrate" type="button" style="margin-top:20px;" onClick="return vibrateClick()" value="click me to vibrate"/>
+    <br/><br/>
+    <input id="iBattery" type="button" style="margin-top:20px;" onClick="return batteryClick()" value="click me to show your battery level"/>
+    <p><label>Battery level: </label><span id="level"></span></p>
+    <!-- <label for="iImage">Take a picture: </label><input id="iImage" type="file" accept="image/*" capture="camera" />
+    <br/><br/> -->
+    <label for="iVideo">Take a video: </label><input id="iVideo" type="file" accept="video/*" capture="camcorder" />
+    <br/><br/>
+    <button id="bVideo" style="margin-right: 10px;" onClick="return videoClick()">Stream your video</button>
+    <button id="bStopVideo" onClick="return stopClick()">Stop Streaming</button>
+    <br/>
+    <video style="width:500px;height:450px;border: 1px solid #ccc;" autoplay></video>
+    <br/>
+    <!-- <br/><br/>
+    <label for="iAudio">Record your voice: </label><input id="iAudio" type="file" accept="audio/*" capture="microphone" /> -->
+    <script src="js/vendor/modernizr-3.6.0.min.js"></script>
+    <script src="js/min/deviceInteract.min.js"></script>
+</body>
+</html>
